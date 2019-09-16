@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oea-WL-r5D">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notifications-->
+        <scene sceneID="ztp-yC-Nh8">
+            <objects>
+                <viewController storyboardIdentifier="NotificationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DSf-G8-CxL" userLabel="Notifications" customClass="NotificationViewController" customModule="dia_de_victoria_radio_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kQx-6V-wrI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-logo" translatesAutoresizingMaskIntoConstraints="NO" id="kQw-PO-9dR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kQw-PO-9dR" secondAttribute="bottom" id="ArP-uc-aN1"/>
+                            <constraint firstItem="kQw-PO-9dR" firstAttribute="trailing" secondItem="tIh-gp-7Ow" secondAttribute="trailing" id="DzM-7a-uWA"/>
+                            <constraint firstItem="kQw-PO-9dR" firstAttribute="leading" secondItem="tIh-gp-7Ow" secondAttribute="leading" id="O2R-M0-QKY"/>
+                            <constraint firstAttribute="bottom" secondItem="kQw-PO-9dR" secondAttribute="bottom" id="Uqp-Wk-Hg2"/>
+                            <constraint firstItem="kQw-PO-9dR" firstAttribute="top" secondItem="tIh-gp-7Ow" secondAttribute="top" id="n9L-bI-r9Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tIh-gp-7Ow"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notificaciones" image="campana-black" id="Eml-Bh-B93"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Dg-B1-QN2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3711.594202898551" y="2618.9732142857142"/>
+        </scene>
+        <!--WebSite-->
+        <scene sceneID="RQ3-bF-btk">
+            <objects>
+                <viewController storyboardIdentifier="WebSiteViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yHn-8e-8id" userLabel="WebSite" customClass="WebSiteViewController" customModule="dia_de_victoria_radio_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zXf-rC-x1c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background-logo" translatesAutoresizingMaskIntoConstraints="NO" id="2O4-u0-8QI">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdv-J4-xGi">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kdv-J4-xGi" firstAttribute="bottom" secondItem="EHp-Bs-KcM" secondAttribute="bottom" id="81B-zs-3Ht"/>
+                            <constraint firstItem="kdv-J4-xGi" firstAttribute="top" secondItem="EHp-Bs-KcM" secondAttribute="top" id="SBH-f3-W7V"/>
+                            <constraint firstItem="kdv-J4-xGi" firstAttribute="leading" secondItem="EHp-Bs-KcM" secondAttribute="leading" id="UCl-KS-kfE"/>
+                            <constraint firstItem="kdv-J4-xGi" firstAttribute="trailing" secondItem="EHp-Bs-KcM" secondAttribute="trailing" id="mjz-2U-Iw1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EHp-Bs-KcM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pagina Web" image="dominio-black" id="CGX-6Y-8C9"/>
+                    <connections>
+                        <outlet property="WebView" destination="kdv-J4-xGi" id="DTp-2v-JQF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M3s-BP-IUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3026.3671875" y="2619.6193265007319"/>
+        </scene>
+        <!--Main Tab Controller-->
+        <scene sceneID="FYV-kk-u4b">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Oea-WL-r5D" customClass="MainTabController" customModule="dia_de_victoria_radio_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uKB-jE-7Ts">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <color key="selectedImageTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fJi-R5-MWD" kind="relationship" relationship="viewControllers" id="h5I-LY-CyE"/>
+                        <segue destination="DSf-G8-CxL" kind="relationship" relationship="viewControllers" id="XMD-Ax-mPa"/>
+                        <segue destination="yHn-8e-8id" kind="relationship" relationship="viewControllers" id="Pjf-I0-AIR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lc2-P1-DjS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3710" y="1685"/>
+        </scene>
+        <!--Radio-->
+        <scene sceneID="57z-Yk-H2c">
+            <objects>
+                <viewController storyboardIdentifier="RadioViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fJi-R5-MWD" customClass="RadioViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wug-0C-EiQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-logo" translatesAutoresizingMaskIntoConstraints="NO" id="T9u-QT-uZw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="clip" numberOfLines="5" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOB-qx-84z">
+                                <rect key="frame" x="20" y="59" width="374" height="184"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="HYG-TL-08D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsb-Lb-vpf">
+                                <rect key="frame" x="129" y="725" width="50" height="50"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="play-black">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPlay:" destination="fJi-R5-MWD" eventType="touchUpInside" id="PPE-Nn-bFm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiJ-LB-RNr">
+                                <rect key="frame" x="234" y="725" width="50" height="50"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="pausa-black">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStop:" destination="fJi-R5-MWD" eventType="touchUpInside" id="cLz-QF-1xw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="T9u-QT-uZw" secondAttribute="bottom" id="2W8-A4-GlU"/>
+                            <constraint firstItem="Jsb-Lb-vpf" firstAttribute="leading" secondItem="A54-mu-KP5" secondAttribute="leading" constant="129" id="3V9-RC-dzo"/>
+                            <constraint firstItem="GOB-qx-84z" firstAttribute="top" secondItem="A54-mu-KP5" secondAttribute="top" constant="15" id="AGt-DD-51u"/>
+                            <constraint firstItem="T9u-QT-uZw" firstAttribute="trailing" secondItem="A54-mu-KP5" secondAttribute="trailing" id="BpJ-1L-YVR"/>
+                            <constraint firstItem="A54-mu-KP5" firstAttribute="trailing" secondItem="GOB-qx-84z" secondAttribute="trailing" constant="20" id="Giu-gJ-cTL"/>
+                            <constraint firstItem="A54-mu-KP5" firstAttribute="bottom" secondItem="Jsb-Lb-vpf" secondAttribute="bottom" constant="38" id="Mxq-7Q-jFd"/>
+                            <constraint firstItem="T9u-QT-uZw" firstAttribute="leading" secondItem="A54-mu-KP5" secondAttribute="leading" id="TFo-mz-Wa2"/>
+                            <constraint firstAttribute="bottom" secondItem="T9u-QT-uZw" secondAttribute="bottom" id="Wsj-dE-0yX"/>
+                            <constraint firstItem="GOB-qx-84z" firstAttribute="leading" secondItem="A54-mu-KP5" secondAttribute="leading" constant="20" id="aie-wK-1D6"/>
+                            <constraint firstItem="A54-mu-KP5" firstAttribute="bottom" secondItem="BiJ-LB-RNr" secondAttribute="bottom" constant="38" id="cnY-TL-xN7"/>
+                            <constraint firstItem="BiJ-LB-RNr" firstAttribute="leading" secondItem="Jsb-Lb-vpf" secondAttribute="trailing" constant="55" id="fYn-BS-2m1"/>
+                            <constraint firstItem="T9u-QT-uZw" firstAttribute="top" secondItem="A54-mu-KP5" secondAttribute="top" id="kJn-Jr-fOg"/>
+                            <constraint firstItem="BiJ-LB-RNr" firstAttribute="centerY" secondItem="Jsb-Lb-vpf" secondAttribute="centerY" id="x1H-kn-Jvv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A54-mu-KP5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Radio" image="microfono-black" id="o8g-Ic-DEf"/>
+                    <connections>
+                        <outlet property="trackDetails" destination="GOB-qx-84z" id="xOG-rC-Ew9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hd9-4x-XDF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4397.1014492753629" y="2617.6339285714284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background-logo" width="2397" height="2471"/>
+        <image name="campana-black" width="24" height="24"/>
+        <image name="dominio-black" width="25" height="25"/>
+        <image name="microfono-black" width="25" height="25"/>
+        <image name="pausa-black" width="50" height="50"/>
+        <image name="play-black" width="50" height="50"/>
+    </resources>
+</document>
